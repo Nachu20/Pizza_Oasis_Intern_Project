@@ -1,0 +1,32 @@
+
+<!-- src/app/product-list/product-list.component.html -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+<div class="product-grid">
+  <div class="product" *ngFor="let product of products">
+    <img [src]="product.imageUrl" alt="{{ product.name }}">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.description }}</p>
+    <p class="price">{{ product.price | currency }}</p>
+    <div class="sam">
+    <button type="submit" style="margin-left: px;" (click)="onCartButtonClick(product)" >
+    <img src="https://cdn.pixabay.com/photo/2016/10/10/14/46/icon-1728552_640.jpg"  alt="buttonpng" border="0" /> 
+    </button>
+    <button type="submit" style="margin-left: 15px;">
+    <img src="https://cdn.pixabay.com/photo/2016/11/30/18/14/like-1873541_640.png"alt="buttonpng1" border="0" />  
+    </button>
+  </div>
+  </div>
+</div>
+<div class="product-list" >
+  <div class="product" *ngFor="let product of filteredProducts">
+      <img [src]="product.imageUrl" alt="{{ product.name }}" width="200" height="200">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.description }}</p>
+    <p class="price">{{ product.price | currency }}</p>
+  </div>
+</div>
+
+
+  
