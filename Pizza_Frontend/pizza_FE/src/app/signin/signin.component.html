@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page UI</title>
+  <link rel="stylesheet" href="signin.component.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://kit.fontawesome.com/55c59672e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  
+  <div class="main">
+    <p class="sign" align="center">Sign in</p>
+    <form (submit)="onValidate()">
+      <input class="un" type="text" align="center" placeholder="email" [(ngModel)]="email" [ngModelOptions]="{standalone:true}">
+      <input class="pass" type="password" align="center" placeholder="password" [(ngModel)]="password" [ngModelOptions]="{standalone:true}">
+      <button type="submit" class="submit" align="center">Sign in</button>
+      <p class="forgot" align="center"><a href="#">Forgot Password?</a></p>
+      <div class="signup-link">
+        <span>Not a member? </span><a routerLink="/signUp">Signup now</a></div>
+    </form>         
+  </div>  
+</body>
+</html>

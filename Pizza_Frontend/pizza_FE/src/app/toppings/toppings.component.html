@@ -1,0 +1,12 @@
+<!-- Your Angular template file, e.g., toppings.component.html -->
+<h1>Toppings</h1>
+<div class="topping-container">
+    <div class="topping-item" *ngFor="let tops of top">
+      <h2>{{ tops.name }}</h2>
+      <p class="price">{{ tops.price | currency }}</p>
+      <button type="submit" (click)="onAddToCartClick(tops)" class="cart">
+        <img src="https://cdn.pixabay.com/photo/2016/10/10/14/46/icon-1728552_640.jpg" alt="addToCart" border="0" />
+      </button>
+    </div>
+  </div>
+  

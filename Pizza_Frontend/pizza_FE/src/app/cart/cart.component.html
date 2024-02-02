@@ -1,0 +1,35 @@
+<div class="pizza-container">
+  <h2>Your Pizza Selection</h2>
+  <!-- Display selected pizzas -->
+  <div *ngIf="selectedPizzas.length > 0 || selectedToppings.length > 0; else emptySelection">
+    <div class="pizza-item" *ngFor="let pizza of selectedPizzas">
+      <img [src]="pizza.imageUrl" alt="{{ pizza.name }}">
+      <div class="pizza-info">
+        <p class="pizza-name">{{ pizza.name }}</p>
+        <p class="pizza-description">{{ pizza.description }}</p>
+        <p class="pizza-price">$ {{ pizza.price }}</p>
+      </div>
+      <button class="remove-button" (click)="removePizza(pizza)">Remove</button>
+    </div>
+
+    <!-- Display selected toppings -->
+    <div class="pizza-item" *ngFor="let top of selectedToppings">
+      <div class="pizza-info">
+        <p class="top-name">{{ top.name }}</p>
+        <p class="top-price">$ {{ top.price }}</p>
+      </div>
+      <button class="remove-button" (click)="removeTopping(top)">Remove</button>
+    </div>
+
+    <div class="pizza-total">
+      <p>Total: $ {{ calculateTotal() }}</p>
+    </div>
+
+    <button class="checkout-button" (click)="placeOrder()">Place Order</button>
+  </div>
+
+  <!-- Display message when no pizzas are selected -->
+  <ng-template #emptySelection>
+    <p class="empty-selection">Please select your favorite pizzas.</p>
+  </ng-template>
+</div>

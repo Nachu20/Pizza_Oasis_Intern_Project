@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="app.component.css">
+<script src="https://kit.fontawesome.com/55c59672e5.js" crossorigin="anonymous"></script>
+<router-outlet></router-outlet>
+<nav>
+  <input type="checkbox" id="check">  
+    <i class="fa-solid fa-shop"></i>
+  <label class="logo">Pizza Website</label>
+  <ul>
+    <li><a class="active" href="/home">Home</a></li>
+    <li><a href="/cart">Cart</a></li>
+    <li><a href="/login">Signin</a></li>
+    <li><a href="/signUp">Signup</a></li>
+  </ul>
+</nav>
+<app-slider></app-slider>
+<div class="pizza-grid">
+  <div class="pizza" *ngFor="let pizza of pizzas">
+    <img [src]="pizza.imageUrl" alt="{{ pizza.name }}">
+    <h2>{{ pizza.name }}</h2>
+    <p>{{ pizza.description }}</p>
+    <p class="price">{{ pizza.price | currency }}</p>
+    <div class="actions">
+      <button type="submit" style="margin-left: px;" (click)="onAddToCartClick(pizza)">
+        <img src="https://cdn.pixabay.com/photo/2016/10/10/14/46/icon-1728552_640.jpg" alt="addToCart" border="0" />
+      </button>
+      <button type="submit" style="margin-left: 15px;" (click)="Order()">
+        <img src="https://img.freepik.com/free-vector/order-now-banner_23-2148711629.jpg?size=626&ext=jpg" alt="Order" border="0" />
+      </button>
+    </div>
+  </div>
+</div>
+<app-toppings></app-toppings>
+
+
+

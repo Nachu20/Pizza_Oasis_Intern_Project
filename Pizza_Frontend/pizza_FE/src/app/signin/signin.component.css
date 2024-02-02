@@ -1,0 +1,103 @@
+body {
+    background-color: #F3EBF6;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main {
+    background-color: #FFFFFF;
+    width: 300px;
+    padding: 40px;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    text-align: center;
+}
+
+.sign {
+    color: #8C55AA;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.un, .pass {
+    width: 100%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 20px;
+}
+
+.un:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+}
+
+.submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #9C27B0, #E040FB);
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.forgot {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #E1BEE7;
+    margin-top: 15px;
+}
+
+a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #E1BEE7;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+}
+/* Add this to your existing styles or create a new style file */
+
+/* Add this to your existing styles or create a new style file */
+
+/* Add this to your existing styles or create a new style file */
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signup-link span {
+    display: inline-block;
+    margin-right: 5px; /* Adjust the margin as needed */
+  }
+  
+  .signup-link a {
+    color: #2196F3; /* Blue color for the link, you can change it to your preference */
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+  }
+  
+  

@@ -1,0 +1,117 @@
+body {
+  background-color: #F3EBF6;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center {
+  background-color: #FFFFFF;
+  width: 400px;
+  padding: 20px;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+h1 {
+  color: #8C55AA;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.txt_field {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.txt_field input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 2px solid #8C55AA;
+  outline: none;
+  background: transparent;
+}
+
+.txt_field span::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #8C55AA;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.txt_field input:focus + span::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+label {
+  font-size: 14px;
+  color: #8C55AA;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 10px;
+  transition: 0.3s ease-out;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+  top: -15px;
+  font-size: 12px;
+  color: #8C55AA;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  border-radius: 5em;
+  color: #fff;
+  background: linear-gradient(to right, #9C27B0, #E040FB);
+  border: 0;
+  padding: 10px 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 13px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup_link {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #E1BEE7;
+  text-align: center;
+  margin-top: 15px;
+}
+
+a {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #E1BEE7;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+  .center {
+      border-radius: 0px;
+  }
+}

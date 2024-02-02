@@ -1,0 +1,60 @@
+/* Your CSS file or inline styles */
+
+.topping-container {
+  display: flex;
+  justify-content: space-around; /* Adjust as needed */
+  align-items: center;
+}
+
+.topping-item {
+  text-align: center;
+  background-color: #f5f5f5; /* Example background color */
+  padding: 10px;
+  margin: 10px; /* Adjust as needed */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+  .price {
+    font-weight: bold;
+  }
+  
+  /* Additional styling for the button if needed */
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .cart {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cart:hover {
+    background-color: #45a049;
+  }
+  .cart img {
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+  }
+  
+h1 {
+  text-align: center;
+  font-size: 2em; /* Adjust as needed */
+  color: #333; /* Adjust text color as needed */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Adjust letter spacing as needed */
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
